@@ -27,7 +27,7 @@ class App extends React.Component {
 
     const { name, email, message } = this.state;
 
-    const form = await axios.post('/api/form', {
+    await axios.post('/api/form', {
       name,
       email,
       message
